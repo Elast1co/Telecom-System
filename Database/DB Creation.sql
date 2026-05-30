@@ -136,10 +136,10 @@ FOREIGN KEY (SubscriptionID) REFERENCES Subscription(SubscriptionID)
 CREATE TABLE Churn_Record (
     ChurnID        INT PRIMARY KEY IDENTITY(1,1),
     ChurnDate      DATE,
-    Churn_Reason   VARCHAR(50),  -- price, competitor, service, network, unknown
-    Comeback_Date  DATE,         -- NULL if customer hasn't returned
+    Churn_Reason   VARCHAR(50), 
+    Comeback_Date  DATE,         
     SubscriptionID INT,
-    CampaignID     INT,          -- NULL if no campaign won them back
+    CampaignID     INT,          
     CONSTRAINT FK_Churn_Sub      FOREIGN KEY (SubscriptionID) REFERENCES Subscription(SubscriptionID),
     CONSTRAINT FK_Churn_Campaign FOREIGN KEY (CampaignID)     REFERENCES Reactivation_Campaign(CampaignID)
 );
