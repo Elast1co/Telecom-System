@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-JD2TUMH_SQLEXPRESS.Telecom_DWH"
+  DTS:DTSID="{BB532DED-7B98-4A54-9A70-F9214C746C68}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-JD2TUMH\SQLEXPRESS;Initial Catalog=Telecom_DWH;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Telecom ETL-{BB532DED-7B98-4A54-9A70-F9214C746C68}DESKTOP-JD2TUMH\SQLEXPRESS.Telecom_DWH;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
